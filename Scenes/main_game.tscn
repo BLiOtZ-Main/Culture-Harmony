@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://berloc3g75pxr"]
+[gd_scene load_steps=24 format=3 uid="uid://berloc3g75pxr"]
 
 [ext_resource type="Texture2D" uid="uid://cxpr2xc38p7kd" path="res://Sprites/Clipboard.svg" id="1_ajre4"]
 [ext_resource type="Texture2D" uid="uid://b0kjjmdvnruha" path="res://Sprites/newnewboard.png" id="1_bshx0"]
@@ -19,7 +19,6 @@
 [ext_resource type="Script" path="res://Scenes/wic_label.gd" id="14_rmkcx"]
 [ext_resource type="Script" path="res://Scenes/mba_label.gd" id="16_jm7dk"]
 [ext_resource type="Script" path="res://Scenes/lasa_label.gd" id="18_plyrn"]
-[ext_resource type="Texture2D" uid="uid://dee20xh6vbbww" path="res://Sprites/greybar.png" id="20_ui1uy"]
 
 [sub_resource type="FontVariation" id="FontVariation_gnexg"]
 base_font = ExtResource("4_7sn1w")
@@ -67,11 +66,6 @@ offset_bottom = 421.0
 text = "    Volunteers:
 	       XXX"
 label_settings = SubResource("LabelSettings_ixtju")
-
-[node name="Greybar" type="Sprite2D" parent="."]
-position = Vector2(1064, 1139.25)
-scale = Vector2(1.16247, 0.98731)
-texture = ExtResource("20_ui1uy")
 
 [node name="Menu" type="Sprite2D" parent="."]
 position = Vector2(2140, 542)

@@ -10,5 +10,5 @@
     "times_played": 0,
     "last_played": 0,
     "cover_image": "(string) .png/.jpg RELATIVE PATH TO THE COVER IMAGE OF YOUR GAME",
-    "exec": "(string) "..\Culture Harmony.arm64"
+    "exec": "(string) "Culture Harmony.arm64"
 }

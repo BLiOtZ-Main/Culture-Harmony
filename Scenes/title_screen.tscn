@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://bqqvyp2nrk1rp"]
+
+[ext_resource type="Texture2D" uid="uid://dk380fs03eh3s" path="res://Sprites/TITLE.png" id="1_0tvor"]
+[ext_resource type="Script" path="res://Scenes/title.gd" id="2_0nvm6"]
+[ext_resource type="FontFile" uid="uid://jd4tv8bcedgl" path="res://fonts/IndieFlower-Regular.ttf" id="2_twb71"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_p5rry"]
+font = ExtResource("2_twb71")
+font_size = 50
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 4
+
+[node name="Title Screen" type="Node2D"]
+
+[node name="Title" type="Sprite2D" parent="."]
+position = Vector2(944, 548)
+scale = Vector2(3.28, 3.04)
+texture = ExtResource("1_0tvor")
+script = ExtResource("2_0nvm6")
+
+[node name="Label" type="Label" parent="Title"]
+offset_left = -226.524
+offset_top = -144.737
+offset_right = 244.476
+offset_bottom = -47.7368
+text = "Campus Culture Clicker"
+label_settings = SubResource("LabelSettings_p5rry")
+
+[node name="Label" type="Label" parent="Title/Label"]
+offset_left = 87.0
+offset_top = 82.0
+offset_right = 339.0
+offset_bottom = 156.0
+text = "Press Start"
+label_settings = SubResource("LabelSettings_p5rry")

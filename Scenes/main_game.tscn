@@ -44,7 +44,8 @@ font_color = Color(0, 0, 0, 1)
 metadata/_edit_vertical_guides_ = [2126.0, 2313.0]
 
 [node name="Woodboard" type="Sprite2D" parent="."]
-position = Vector2(1369, 540)
+position = Vector2(1369, 539.75)
+scale = Vector2(1, 1.00232)
 texture = ExtResource("1_bshx0")
 
 [node name="PeopleGroup" type="Sprite2D" parent="."]

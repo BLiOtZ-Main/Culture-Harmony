@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpxg58mc7dtv6"]
+
+[ext_resource type="AudioStream" uid="uid://6lim0u8hfdyj" path="res://music/559850__migfus20__jazz-background-music-loop.mp3" id="1_k3tt1"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_k3tt1")

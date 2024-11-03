@@ -1,0 +1,14 @@
+{
+    "title": "(string) Campus Culture Clicker",
+    "author": "(string) Jett M., Sam M., Octavious C., and Gabriella H",
+    "summary": "(string) Spreading awareness in one click",
+    "release_date": "2024-03-11",
+    "multiplayer": false,
+    "genres": [
+        "(string) Clicker"
+    ],
+    "times_played": 0,
+    "last_played": 0,
+    "cover_image": "(string) .png/.jpg RELATIVE PATH TO THE COVER IMAGE OF YOUR GAME",
+    "exec": "(string) "..\Culture Harmony.arm64"
+}

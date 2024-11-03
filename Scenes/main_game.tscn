@@ -1,0 +1,132 @@
+[gd_scene load_steps=16 format=3 uid="uid://berloc3g75pxr"]
+
+[ext_resource type="Texture2D" uid="uid://cxpr2xc38p7kd" path="res://Sprites/Clipboard.svg" id="1_ajre4"]
+[ext_resource type="Texture2D" uid="uid://cbwmxcv0enosg" path="res://Sprites/People_Group.png" id="1_hv7un"]
+[ext_resource type="Script" path="res://clicker.gd" id="1_natir"]
+[ext_resource type="Texture2D" uid="uid://iphmu32ncjea" path="res://Sprites/Group_20.png" id="3_kjujd"]
+[ext_resource type="FontFile" uid="uid://jd4tv8bcedgl" path="res://fonts/IndieFlower-Regular.ttf" id="4_7sn1w"]
+[ext_resource type="Script" path="res://Scenes/menu.gd" id="4_hp0bx"]
+[ext_resource type="Texture2D" uid="uid://df20g8c552gxr" path="res://Sprites/ACA.png" id="5_xuepc"]
+[ext_resource type="Texture2D" uid="uid://b1ck5i2f4531y" path="res://Sprites/COMS.png" id="8_iujeo"]
+[ext_resource type="Texture2D" uid="uid://duxbcha603tk0" path="res://Sprites/Wic_Piece.png" id="9_vv5my"]
+[ext_resource type="Texture2D" uid="uid://cmglleih6lbhx" path="res://Sprites/MBA.png" id="10_mgcxi"]
+[ext_resource type="Texture2D" uid="uid://cbj6co5a3loe4" path="res://Sprites/LASA.png" id="11_34g1g"]
+
+[sub_resource type="FontVariation" id="FontVariation_gnexg"]
+base_font = ExtResource("4_7sn1w")
+spacing_bottom = -190
+
+[sub_resource type="LabelSettings" id="LabelSettings_ixtju"]
+font = SubResource("FontVariation_gnexg")
+font_size = 96
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 33
+
+[sub_resource type="FontVariation" id="FontVariation_mf70l"]
+base_font = ExtResource("4_7sn1w")
+spacing_bottom = -70
+
+[sub_resource type="LabelSettings" id="LabelSettings_fg5g2"]
+font = SubResource("FontVariation_mf70l")
+font_size = 32
+font_color = Color(0, 0, 0, 1)
+
+[node name="Main Game" type="Node2D"]
+metadata/_edit_vertical_guides_ = [2126.0, 2313.0]
+
+[node name="PeopleGroup" type="Sprite2D" parent="."]
+position = Vector2(364.991, 288)
+scale = Vector2(1.14679, 1.14679)
+texture = ExtResource("1_hv7un")
+
+[node name="Clicker" type="Sprite2D" parent="."]
+position = Vector2(361, 761)
+scale = Vector2(1.3062, 1.35456)
+texture = ExtResource("1_ajre4")
+script = ExtResource("1_natir")
+
+[node name="Counter" type="Label" parent="."]
+offset_left = 153.0
+offset_top = 230.0
+offset_right = 566.0
+offset_bottom = 421.0
+text = "Volunteers:
+	    XXX"
+label_settings = SubResource("LabelSettings_ixtju")
+
+[node name="Menu" type="Sprite2D" parent="."]
+position = Vector2(2140, 542)
+scale = Vector2(1.00442, 1.00442)
+texture = ExtResource("3_kjujd")
+script = ExtResource("4_hp0bx")
+
+[node name="ACA" type="Sprite2D" parent="Menu"]
+position = Vector2(-12.9427, -271.799)
+scale = Vector2(1.15172, 1.15172)
+texture = ExtResource("5_xuepc")
+
+[node name="ACA Label" type="Label" parent="Menu/ACA"]
+offset_left = 162.517
+offset_top = -33.7136
+offset_right = 324.517
+offset_bottom = 41.2864
+text = "PRICE
+AMOUNT"
+label_settings = SubResource("LabelSettings_fg5g2")
+
+[node name="Coms" type="Sprite2D" parent="Menu"]
+position = Vector2(-13.9385, -149.34)
+scale = Vector2(1.15483, 1.15483)
+texture = ExtResource("8_iujeo")
+
+[node name="Coms Label" type="Label" parent="Menu/Coms"]
+offset_left = 162.941
+offset_top = -39.6577
+offset_right = 324.941
+offset_bottom = 35.3423
+text = "PRICE
+AMOUNT"
+label_settings = SubResource("LabelSettings_fg5g2")
+
+[node name="WicPiece" type="Sprite2D" parent="Menu"]
+position = Vector2(-15.9297, -24.89)
+scale = Vector2(1.14924, 1.14924)
+texture = ExtResource("9_vv5my")
+
+[node name="Wic Label" type="Label" parent="Menu/WicPiece"]
+offset_left = 165.465
+offset_top = -40.7166
+offset_right = 327.465
+offset_bottom = 34.2834
+text = "PRICE
+AMOUNT"
+label_settings = SubResource("LabelSettings_fg5g2")
+
+[node name="Mba" type="Sprite2D" parent="Menu"]
+position = Vector2(-11.947, 101.551)
+scale = Vector2(1.14494, 1.14494)
+texture = ExtResource("10_mgcxi")
+
+[node name="Mba Label" type="Label" parent="Menu/Mba"]
+offset_left = 162.608
+offset_top = -40.0
+offset_right = 324.608
+offset_bottom = 35.0
+text = "PRICE
+AMOUNT"
+label_settings = SubResource("LabelSettings_fg5g2")
+
+[node name="Lasa" type="Sprite2D" parent="Menu"]
+position = Vector2(-11.9473, 226.997)
+scale = Vector2(1.13355, 1.13355)
+texture = ExtResource("11_34g1g")
+
+[node name="Lasa Label" type="Label" parent="Menu/Lasa"]
+offset_left = 164.243
+offset_top = -41.2804
+offset_right = 326.243
+offset_bottom = 33.7196
+text = "PRICE
+AMOUNT"
+label_settings = SubResource("LabelSettings_fg5g2")
